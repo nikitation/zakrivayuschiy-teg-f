@@ -11,7 +11,7 @@
 */
 
 html {
-  font-size: 16px; /* для chrome */
+  font-size: 16px;
 }
 
 .page {
@@ -325,7 +325,6 @@ html {
 }
 
 .save-button__text {
-  /* это лишнее но захотелось выравнить */
   padding-block-start: var(--save-button-text-block-start);
 }
 
