@@ -1,1 +1,149 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --accent-font: 'PressStart2P-Regular', monospace;
+  --main-font: 'Inter-Variable', sans-serif;
+  --main-font-weight: 410;
+  --title-font-weight: 715;
+
+  --base-font-size: 18px;
+  --accent-font-size: 14px;
+
+  --surface-color: #fff;
+  --main-border: 2px solid #000;
+
+  --page-background-image:
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0% 0.01%,
+      #1a1a1a
+    ); 
+
+  --content-width: clamp(375px, 100%, 700px); /* кажется логичнее: max-inline-size: 700px; inline-size: 100%; */
+  
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* font-size clamp generator
+                                                                        *            min  max 
+                                                                        * viewport   375  1440
+                                                                        * font-size  49   65  
+                                                                        */
+  --header-description-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header-content-padding-block: clamp(7.5625rem, 7.3864rem + 0.7512vw, 8.0625rem); /*font-size clamp generator*/
+  --header-margin-block: 99px;
+  --header-content-gap: 20px;
+
+  --main-content-gap: 50px;
+  --main-content-margin-block-end: 100px;
+  --cards-gap: clamp(3.0625rem, 2.9965rem + 0.2817vw, 3.25rem);
+  --card-title-font-size: 18px;
+  --card-title-padding: 4px 10px;
+  --card-label-top: 25px;
+  --card-label-right: 25px;
+  --image-wrapper-border-block: 2px solid #000;
+  --text-stroke-color: #fff;
+  --card-content-gap: 24.4px;
+  --card-content-padding: 25px;
+  --card-buttons-gap: 9px;
+
+  /* в pixel perfect сильный сдвиг при aspect-ratio: 1/1, хотя значения c figma совпадают */ 
+  --card-image-wrap-height: clamp(23.53125rem, 16.4384rem + 30.2629vw, 43.675rem);
+  --card-image-wrap-width: 100%;
+
+  --card-image-inline-size: 101%;
+  --card-image-block-size: 101%;
+  --card-image-obj-pos: 97%;
+  --image-blank-filter:
+      saturate(35%)
+      brightness(90%)
+      contrast(85%)
+      hue-rotate(10deg);
+  --image-doubt-filter:
+      saturate(250%)
+      hue-rotate(5deg)
+      brightness(150%);
+  --image-perfection-filter: hue-rotate(33deg);
+  --image-support-filter:
+      invert(100%)
+      hue-rotate(25deg)
+      saturate(80%)
+      contrast(80%);
+  --image-strategy-filter:
+      grayscale(100%)
+      sepia(100%)
+      hue-rotate(-25deg)
+      brightness(95%)
+      contrast(100%)
+      saturate(150%);
+  --image-focus-filter: blur(20px);
+  --image-present-filter:
+      invert(45%)
+      hue-rotate(90deg)
+      contrast(500%)
+      saturate(85%)
+      blur(2px);
+
+  --card-icon-button-inline-size: 39px;
+  --card-icon-button-block-size: 36px;
+
+  --icon-button-bg-color: #fff;
+  --like-icon-width: 39px;
+  --like-icon-height: 36px;
+
+  --button-text-line-height: 90%;
+  --button-text-color: #fff;
+
+  /*--like-button-padding: 9.7px 34.5px 5px;*/
+  --like-button-padding: 9.7px 0 5px;
+  --like-button-inline-size: 130px;
+
+  --save-button-icon-inline-size: 21px;
+  --save-button-icon-block-size: 21px;
+  --save-button-padding: 14px 20px;
+  --save-button-gap: 7px;
+
+  --save-button-text-block-start: 4px;
+
+  --dialog-gap: 30px;
+  --dialog-padding: 30px;
+  --dialog-content-gap: 20px;
+  --dialog-content-text-inline-size: 234px;
+  --dialog-content-text-line-height: 150%;
+  --dialog-content-icon-inline-size: 39px;
+  --dialog-content-icon-block-size: 39px;
+  --dialog-button-padding: 12.5px 0 7px;
+
+  --text-button-transition: box-shadow 0.3s ease;
+  --button-box-shadow: 2px 2px #000;
+
+  --button-before-bg-color: #000;
+  --button-before-inline-size: 100%;
+  --button-before-block-size: 100%;
+  --button-before-inset: 0;
+  --button-before-transform: translate(-100%, -100%);
+
+  --heart-contour-color: #000;
+  --heart-body-color: #ff0000;
+  --heart-core-color: #fff;
+  --heart-sparks-color: #ff0000;
+  --heart-animation-fill-color: #ff0000;
+}
+
+@media (width <= 375px) {
+  :root {
+    --save-button-icon-inline-size: 28px;
+    --save-button-icon-block-size: 28px;
+    --save-button-padding: 13px 18px;
+    --save-button-gap: 13px;
+
+    --save-button-text-block-start: 0;
+  }
+}
+
