@@ -25,8 +25,7 @@
     linear-gradient(
       to bottom,
       #e7e7e7 0% 0.01%,
-      #1a1a1a
-    ); 
+      #1a1a1a); 
 
   --content-width: clamp(375px, 100%, 700px); /* кажется логичнее: max-inline-size: 700px; inline-size: 100%; */
   
