@@ -13,15 +13,12 @@
 
   --page-background-image: repeating-linear-gradient( to right, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient( to bottom, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient( to bottom, #e7e7e7 0% 0.01%, #1a1a1a); 
 
-  --content-width: clamp(375px, 100%, 700px); /* кажется логичнее: max-inline-size: 700px; inline-size: 100%; */
+  --content-width: clamp(375px, 100%, 700px);
   
-  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* font-size clamp generator
-                                                                        *            min  max 
-                                                                        * viewport   375  1440
-                                                                        * font-size  49   65  
-                                                                        */
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-description-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --header-content-padding-block: clamp(7.5625rem, 7.3864rem + 0.7512vw, 8.0625rem); /*font-size clamp generator*/
+  /*font-size clamp generator*/
+  --header-content-padding-block: clamp(7.5625rem, 7.3864rem + 0.7512vw, 8.0625rem);
   --header-margin-block: 99px;
   --header-content-gap: 20px;
 
